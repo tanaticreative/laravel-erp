@@ -1,0 +1,33 @@
+{
+  "name": "agrimand/laravel-erp",
+  "description": "Integration package for AGR application with Weclapp ERP",
+  "type": "library",
+  "license": "proprietary",
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "authors": [
+    {
+      "name": "Tanat",
+      "email": "tanat@gmail.com"
+    }
+  ],
+  "require": {
+    "illuminate/support": "^5",
+    "guzzlehttp/guzzle": "*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Agrimand\\ERP\\": "/"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Agrimand\\ERP\\ServiceProvider"
+      ],
+      "aliases": {
+        "ERPManager": "Agrimand\\ERP\\Support\\Facade"
+      }
+    }
+  }
+}
