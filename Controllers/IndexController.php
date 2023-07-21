@@ -59,7 +59,6 @@ class IndexController extends Controller
         $entityId = $request->json('entityId');
         $entityName = $request->json('entityName');
 
-        info($request->all());
 
         switch ($request->get('a')) {
             case 'deleted':
