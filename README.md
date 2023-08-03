@@ -1,2 +1,2 @@
-# laravel-erp
+# laravel-weclapp-erp
 Laravel Weclapp ERP Client
